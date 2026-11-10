@@ -1,0 +1,15 @@
+name: tree
+
+services:
+  tree:
+    image: mcr.microsoft.com/devcontainers/go:2-1.27-trixie
+    container_name: tree
+    working_dir: /home/vscode/project
+    volumes:
+      - ..:/home/vscode/project:rw
+      - ../.devcontainer/.bash_history:/home/vscode/.bash_history:rw
+    command: sleep infinity
+
+networks:
+  default:
+    name: tree-network

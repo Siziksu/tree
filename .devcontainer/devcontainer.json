@@ -1,0 +1,17 @@
+{
+  "name": "Go",
+  "dockerComposeFile": "./docker-compose.yaml",
+  "service": "tree",
+  "workspaceFolder": "/home/vscode/project",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "siziksu.git-config-info"
+      ],
+      "settings": {
+        "go.toolsManagement.checkForUpdates": "off"
+      }
+    }
+  }
+}
